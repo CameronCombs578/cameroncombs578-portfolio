@@ -1,13 +1,13 @@
 * { box-sizing: border-box; }
 
-.body{
+body {
     font-family: 'Courier New', Courier, monospace;
     background-color:aliceblue;
     margin: 5%;
-    padding: 20%;
+    padding: 20px;
 }
 
-.card{
+.card {
     max-width: 600px;
     margin: 0 auto;
     padding: 39px;
@@ -15,8 +15,8 @@
     border: 5px solid crimson;
 }
 
-.h1{
+h1 {
     color: blueviolet;
     font-size: large;
-    margin: 50;
+    margin: 50px;
 }
