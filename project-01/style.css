@@ -2,12 +2,124 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+:root {
+  /* Color Palette */
+  --primary-color: #ffffff;
+  --primary-hover-color: #cfcfcf;
+  --background-color: #02aab6;
+  --background-button-color: #FFFFFF;
+  --border-color: black;
+  
+  /* Typography */
+  --font-main: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --font-special: 'Times New Romans';
+  --font-size-base: 16px;
+  --font-size-small: 10px;
+  
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}
+
+/* index.html file style */
+
+.small-text{
+    font-size: var(--font-size-small);
+    font-weight: var(--font-size-base);
+    line-height: var(--spacing-large);
+
+}
+.body {
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+
+    background-color: var(--background-color);
+    margin: var(--spacing-large);
+}
+
+.main-grid{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+
+
+.main-cards {
+  background-color: var(--background-button-color);
+  font-family: var(--font-special);
+  padding: var(--spacing-small) var(--spacing-small);
+  width: 130px;
+  border: 7px solid var(--border-color);
+  transition: background-color 0.3s ease;
+  margin: var(--spacing-medium);
+}
+
+.main-cards:hover {
+  background-color: var(--primary-hover-color);
+}
+
+
+
 /* Skills.html file style */
 
 .skills-grid{
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .skills-card{
-    border: ;
+    font-family: var(--font-special);
+    border: 1px solid var(--border-color);
+    background-color: var(--background-button-color);
+    padding: 16px;
+    font-weight:900;
+    line-height: var(--spacing-large);
+    flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
+    margin: var(--spacing-medium);
+}
+
+/* project.html file style */
+
+.projects-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.projects-card{
+    font-family: var(--font-special);
+    border: 1px solid var(--border-color);
+    background-color: var(--background-button-color);
+    padding: 16px;
+    font-weight:900;
+    line-height: var(--spacing-large);
+    flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
+    margin: var(--spacing-medium);
+}
+
+.projects-card img{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (width >= 480px) {
+    .main-cards {
+    flex-basis: 45%;
+    }
+}
+
+@media (width >= 1024px) {
+    .main-cards {
+    flex-basis: 30%;
+    }
 }
