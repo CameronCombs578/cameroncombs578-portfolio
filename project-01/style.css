@@ -28,12 +28,6 @@
 
 /* index.html file style */
 
-.small-text{
-    font-size: var(--font-size-small);
-    font-weight: var(--font-size-base);
-    line-height: var(--spacing-large);
-
-}
 .body {
     font-family: var(--font-main);
     font-size: var(--font-size-base);
@@ -42,10 +36,21 @@
     margin: var(--spacing-large);
 }
 
+.main-header{
+    padding: var(--spacing-small);
+    border: 3px solid var(--border-color);
+    margin-bottom: var(--spacing-small);
+}
+.header{
+    padding: var(--spacing-small);
+    border: 3px solid var(--border-color);
+    margin: var(--spacing-small);
+
+}
+
 .main-grid{
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
 
 }
@@ -56,7 +61,7 @@
   background-color: var(--background-button-color);
   font-family: var(--font-special);
   padding: var(--spacing-small) var(--spacing-small);
-  width: 130px;
+  width: auto;
   border: 7px solid var(--border-color);
   transition: background-color 0.3s ease;
   margin: var(--spacing-medium);
@@ -68,7 +73,7 @@
 
 
 
-/* Skills.html file style */
+/* skills section style */
 
 .skills-grid{
     display: flex;
@@ -85,9 +90,13 @@
     line-height: var(--spacing-large);
     flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
     margin: var(--spacing-medium);
+    transition: background-color 0.3s ease;
 }
 
-/* project.html file style */
+.skills-card:hover {
+  background-color: var(--primary-hover-color);
+}
+/* project section style */
 
 .projects-grid{
     display: flex;
@@ -104,13 +113,30 @@
     line-height: var(--spacing-large);
     flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
     margin: var(--spacing-medium);
+    transition: background-color 0.3s ease;
 }
-
+.projects-card:hover {
+  background-color: var(--primary-hover-color);
+}
 .projects-card img{
     width: 100%;
     height: auto;
 }
 
+.footer-button{
+
+  background-color: var(--background-button-color);
+  font-family: var(--font-special);
+  width: 89px;
+  font-size: var(--font-size-small);
+
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: var(--primary-hover-color);
+}
 
 @media (width >= 480px) {
     .main-cards {
