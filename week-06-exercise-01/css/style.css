@@ -147,15 +147,39 @@ code {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  bottom: 20px;
+  width: 260px;
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
 
-.nav-custom li {}
+.nav-custom li {
+  justify-content: center;
+}
 
-.nav-custom a {}
+.nav-custom a {
+  display: block;
+  border: 2px solid#111111;
+  padding: 15px 1;
+  color: #407497;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-.nav-custom a:hover {}
+.nav-custom a:hover {
+  color:aqua;
+  transform: translateY(5px);
+}
 
 @media (width >=480px) {}
 
