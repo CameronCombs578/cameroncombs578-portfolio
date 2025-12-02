@@ -14,7 +14,7 @@
     --background-color: rgb(171, 186, 196);
 
     /* Typography */
-    --font-main: "'Courier New', Courier, monospace;";
+    --font-main: "serif";
     --font-size-base: "16px";
     --font-size-large: "24px";
     
@@ -46,10 +46,13 @@ main {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
     margin-top: var(--spacing-large);
     line-height: 5em;
-    text-align: center;
+    justify-content: center;
 }
+
 
 ul {
     max-width: left var(--spacing-large);
@@ -97,6 +100,88 @@ ul {
 .nav-horizontal a:hover {
     background-color: var(--transition-color);
     transform: translateY(5px);
+}
+
+/* skills section style */
+
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.skills-card{
+    font-family: var(--font-main);
+    color: white;
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 16px;
+    font-weight: var(--spacing-small);
+    line-height: var(--spacing-large);
+    flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
+    margin: var(--spacing-large);
+    transition: color 0.3s ease;
+}
+
+.skills-card:hover {
+  color: black;
+}
+
+.projects-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.projects-card{
+    font-family: var(--font-main);
+    color: var(--secondary-color);
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 19px;
+    font-weight: 100px;
+    line-height: var(--spacing-large);
+    flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
+    margin: var(--spacing-medium);
+    transition: color 0.3s ease;
+    width: 4px;
+}
+
+.projects-card h2 {
+    margin: var(--spacing-medium);
+    width: 450px;
+    font-weight: 100;
+}
+.projects-card:hover {
+  color: black;
+}
+.projects-card img{
+    width: 50%;
+    height: auto;
+}
+
+.footer-button{
+
+  background-color: var(--secondary-color);
+  font-family: var(--font-main);
+  width: 224px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-main);
+
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+  margin-top: var(--spacing-larger);
+}
+
+.footer-button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+
 }
 
 @media (width >= 480px) {}
