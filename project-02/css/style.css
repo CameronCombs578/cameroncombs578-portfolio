@@ -12,6 +12,7 @@
     --transition-color:rgb(6, 130, 187);
     --appear-color:black;
     --background-color: rgb(171, 186, 196);
+    --second-background-color: rgb(85, 82, 82);
 
     /* Typography */
     --font-main: "serif";
@@ -30,7 +31,7 @@ body {
     font-size: var(--spacing-large);
     line-height: 2;
     color: black;
-    background-color: var(--background-color);
+    background-color: var(--second-background-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -42,7 +43,8 @@ main {
     max-width: 800%;
     width: 100%;
     padding: 0 16px;
-    
+    background-color: var(--background-color);
+
 }
 
 h1 {
@@ -50,9 +52,22 @@ h1 {
     justify-content: center;
     margin-top: var(--spacing-large);
     line-height: 5em;
-    justify-content: center;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-large);
+    line-height: 5em;
+}
+
+h4 {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-small);
+    line-height: 5em;
+    justify-content: center;
+}
 
 ul {
     max-width: left var(--spacing-large);
@@ -65,7 +80,7 @@ ul {
     left: 0;
     top: 0;
     right: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--second-background-color);
     padding: 0 var(--spacing-large);
     z-index: 1000;
 }
@@ -81,7 +96,6 @@ ul {
 
 .nav-horizontal li {
     margin: var(--spacing-medium);
-
     display: flex;
     justify-content: center;
 
@@ -92,6 +106,8 @@ ul {
     padding: var(--spacing-medium);
     display: block;
     color: black;
+    background-color: var(--secondary-color);
+
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border: 1px solid black;
@@ -121,10 +137,17 @@ ul {
     flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
     margin: var(--spacing-large);
     transition: color 0.3s ease;
+
 }
 
 .skills-card:hover {
   color: black;
+}
+
+.skills-card img{
+    width: 50%;
+    height: auto;
+    margin-left: 110px;
 }
 
 .projects-grid{
@@ -158,24 +181,35 @@ ul {
 .projects-card img{
     width: 50%;
     height: auto;
+    margin-left: 110px;
 }
 
-.footer-button{
 
-  background-color: var(--secondary-color);
-  font-family: var(--font-main);
-  width: 224px;
-  display: flex;
-  align-items: center;
-  font-size: var(--font-main);
 
-  border: 1px solid black;
-  transition: background-color 0.3s ease;
-  margin-top: var(--spacing-larger);
+.footer-button {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-button a {
+
+    padding: var(--spacing-medium);
+    display: block;
+    color: black;
+    background-color: var(--secondary-color);
+    margin-bottom: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid black;
 }
 
-.footer-button:hover {
-  background-color: var(--primary-hover-color);
+.footer-button li {
+    margin: var(--spacing-medium);
+}
+
+.footer-button a:hover {
+    background-color: var(--transition-color);
+    transform: translateY(5px);
 }
 
 .header{
