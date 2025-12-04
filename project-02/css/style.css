@@ -89,14 +89,13 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 0px;
 }
 
 .nav-horizontal li {
     margin: var(--spacing-medium);
-    display: flex;
-    justify-content: center;
-
 }
 
 .nav-horizontal a {
