@@ -64,8 +64,7 @@ h2 {
 h4 {
     display: flex;
     align-items: center;
-    margin-top: var(--spacing-small);
-    line-height: 5em;
+    margin-bottom: var(--spacing-large);
     justify-content: center;
 }
 
@@ -76,7 +75,6 @@ ul {
 
 .nav-horizontal {
     position: fixed;
-
     left: 0;
     top: 0;
     right: 0;
@@ -136,18 +134,18 @@ ul {
     line-height: var(--spacing-large);
     flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
     margin: var(--spacing-large);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
 
 }
 
 .skills-card:hover {
-  color: black;
+    color: black;
+    background-color: var(--primary-color);
 }
 
 .skills-card img{
     width: 50%;
     height: auto;
-    margin-left: 110px;
 }
 
 .projects-grid{
@@ -166,7 +164,7 @@ ul {
     line-height: var(--spacing-large);
     flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
     margin: var(--spacing-medium);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
     width: 4px;
 }
 
@@ -176,15 +174,13 @@ ul {
     font-weight: 100;
 }
 .projects-card:hover {
-  color: black;
+    color: black;
+    background-color: var(--primary-color);
 }
 .projects-card img{
     width: 50%;
     height: auto;
-    margin-left: 110px;
 }
-
-
 
 .footer-button {
     width: auto;
