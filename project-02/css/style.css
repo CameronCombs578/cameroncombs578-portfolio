@@ -69,12 +69,11 @@ h4 {
 }
 
 ul {
-    max-width: left var(--spacing-large);
     margin-bottom: var(--spacing-small);
 }
 
 .nav-horizontal {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
