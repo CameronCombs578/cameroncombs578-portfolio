@@ -70,6 +70,10 @@ ul {
     margin-bottom: var(--spacing-small);
 }
 
+p {
+    margin-bottom: var(--spacing-medium);
+}
+
 .nav-horizontal {
     position: fixed;
     left: 0;
@@ -206,7 +210,8 @@ ul {
 }
 
 .travel-button {
-    width: 144px;
+    display: flex;
+    justify-content: center;
 }
 
 .travel-button ul {
