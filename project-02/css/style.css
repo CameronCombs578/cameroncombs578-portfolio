@@ -56,8 +56,7 @@ h1 {
 h2 {
     display: flex;
     justify-content: center;
-    margin-top: var(--spacing-large);
-    line-height: 5em;
+    line-height: 4em;
 }
 
 h4 {
@@ -207,8 +206,7 @@ ul {
 }
 
 .travel-button {
-    padding: 0 var(--spacing-large);
-    z-index: 1000;
+    width: 144px;
 }
 
 .travel-button ul {
@@ -216,9 +214,9 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+
 }
 
 .travel-button li {
@@ -227,7 +225,7 @@ ul {
 }
 
 .travel-button a {
-    padding: var(--spacing-medium);
+    padding: var(--spacing-small);
     display: block;
     color: black;
     background-color: var(--secondary-color);
