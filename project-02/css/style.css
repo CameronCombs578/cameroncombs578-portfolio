@@ -28,7 +28,7 @@
 
 body {
     font-family: var(--font-main);
-    font-size: var(--spacing-large);
+    font-size: var(--font-size-base);
     line-height: 2;
     color: black;
     background-color: var(--second-background-color);
@@ -50,8 +50,7 @@ main {
 h1 {
     display: flex;
     justify-content: center;
-    margin-top: var(--spacing-large);
-    line-height: 5em;
+    line-height: 10em;
 }
 
 h2 {
@@ -73,39 +72,41 @@ ul {
 }
 
 .nav-horizontal {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
     background-color: var(--second-background-color);
-    padding: 0 var(--spacing-large);
     z-index: 1000;
+    font-size: 15px;
 }
 
 .nav-horizontal ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .nav-horizontal li {
-    margin: var(--spacing-medium);
+  margin-bottom: 0;
+  width: 60px;
 }
 
 .nav-horizontal a {
-    width: auto;
     padding: var(--spacing-medium);
     display: block;
     color: black;
     background-color: var(--secondary-color);
+    margin-bottom: 12px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-horizontal a:hover {
@@ -142,7 +143,7 @@ ul {
 
 .skills-card img{
     width: 50%;
-    height: auto;
+    height: 50%;
 }
 
 .projects-grid{
@@ -176,16 +177,15 @@ ul {
 }
 .projects-card img{
     width: 50%;
-    height: auto;
+    height: 50%;
 }
 
 .footer-button {
     width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .footer-button a {
-
     padding: var(--spacing-medium);
     display: block;
     color: black;
@@ -198,9 +198,48 @@ ul {
 
 .footer-button li {
     margin: var(--spacing-medium);
+    
 }
 
 .footer-button a:hover {
+    background-color: var(--transition-color);
+    transform: translateY(5px);
+}
+
+.travel-button {
+    padding: 0 var(--spacing-large);
+    z-index: 1000;
+}
+
+.travel-button ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.travel-button li {
+  margin-bottom: 0;
+  width: auto;
+}
+
+.travel-button a {
+    padding: var(--spacing-medium);
+    display: block;
+    color: black;
+    background-color: var(--secondary-color);
+    margin-bottom: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.travel-button a:hover {
     background-color: var(--transition-color);
     transform: translateY(5px);
 }
