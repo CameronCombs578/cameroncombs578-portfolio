@@ -15,7 +15,7 @@
     --second-background-color: rgb(40, 91, 116);
 
     /* Typography */
-    --font-main: "serif";
+    --font-main: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --font-size-base: "16px";
     --font-size-large: "24px";
     
@@ -69,10 +69,20 @@ h4 {
 ul {
     margin-bottom: var(--spacing-small);
     margin-left: var(--spacing-large);
+    
+}
+
+.ul-text {
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    padding: 4px;
 }
 
 p {
     margin-bottom: var(--spacing-medium);
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    padding: 4px;
 }
 
 .nav-horizontal {
@@ -105,14 +115,14 @@ p {
     color: black;
     margin-bottom: 12px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
     display: flex;
     justify-content: center;
 }
 
 .nav-horizontal a:hover {
     color: var(--transition-color);
-    transform: translateY(5px);
+    transform: translateY(-5px);
 }
 
 /* skills section style */
