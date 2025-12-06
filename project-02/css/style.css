@@ -9,10 +9,10 @@
     /* Color Palette*/
     --primary-color:rgb(112, 112, 224); 
     --secondary-color:white;
-    --transition-color:rgb(6, 130, 187);
+    --transition-color:rgb(109, 201, 243);
     --appear-color:black;
-    --background-color: rgb(171, 186, 196);
-    --second-background-color: rgb(85, 82, 82);
+    --background-color: rgb(171, 174, 196);
+    --second-background-color: rgb(40, 91, 116);
 
     /* Typography */
     --font-main: "serif";
@@ -68,6 +68,7 @@ h4 {
 
 ul {
     margin-bottom: var(--spacing-small);
+    margin-left: var(--spacing-large);
 }
 
 p {
@@ -102,17 +103,15 @@ p {
     padding: var(--spacing-medium);
     display: block;
     color: black;
-    background-color: var(--secondary-color);
     margin-bottom: 12px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
 }
 
 .nav-horizontal a:hover {
-    background-color: var(--transition-color);
+    color: var(--transition-color);
     transform: translateY(5px);
 }
 
@@ -140,7 +139,7 @@ p {
 
 .skills-card:hover {
     color: black;
-    background-color: var(--primary-color);
+    background-color: var(--transition-color);
 }
 
 .skills-card img{
@@ -172,83 +171,20 @@ p {
     width: 450px;
     font-weight: 100;
 }
+
 .projects-card:hover {
     color: black;
-    background-color: var(--primary-color);
+    background-color: var(--transition-color);
 }
+
 .projects-card img{
     width: 50%;
     height: 50%;
 }
 
-.footer-button {
-    width: auto;
-    display: flex;
-    justify-content: space-evenly;
-}
-.footer-button a {
-    padding: var(--spacing-medium);
-    display: block;
-    color: black;
-    background-color: var(--secondary-color);
-    margin-bottom: 12px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 1px solid black;
-}
-
-.footer-button li {
-    margin: var(--spacing-medium);
-    
-}
-
-.footer-button a:hover {
-    background-color: var(--transition-color);
-    transform: translateY(5px);
-}
-
-.travel-button {
-    display: flex;
-    justify-content: center;
-}
-
-.travel-button ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 0px;
-
-}
-
-.travel-button li {
-  margin-bottom: 0;
-  width: auto;
-}
-
-.travel-button a {
-    padding: var(--spacing-small);
-    display: block;
-    color: black;
-    background-color: var(--secondary-color);
-    margin-bottom: 12px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-}
-
-.travel-button a:hover {
-    background-color: var(--transition-color);
-    transform: translateY(5px);
-}
-
 .header{
     display: flex;
     justify-content: center;
-
 }
 
 @media (width >= 480px) {
